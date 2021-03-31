@@ -1,0 +1,11 @@
+#!/usr/bin/python
+
+import initialize
+import sys
+
+argv = sys.argv
+
+if len(argv) == 2 and argv[1] == 'init':
+    CONFIG_DIR = initialize.initialize_new_config()
+else:
+    print("Invalid arguments")
